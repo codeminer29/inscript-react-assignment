@@ -116,7 +116,7 @@ export default function Spreadsheet() {
         <div className="grid grid-cols-[32px_256px_124px_124px_124px_124px_124px_124px_124px_124px_124px] h-[32px] ">
           <div className="bg-white border-r border-gray-300" />
           <div className="col-span-4 flex items-center bg-[#E2E2E2] px-3">
-            <button className="w-[158px] h-[24px] bg-[#EEEEEE] text-[#545454] text-sm px-1 py-[4px] rounded-md font-medium flex items-center gap-1">
+            <button className="h-[24px] bg-[#EEEEEE] text-[#545454] text-sm px-1 py-[4px] rounded-md font-medium flex items-center gap-1">
                 🔗 Q3 Financial Overview 
             </button>
             <button className="ml-3"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
