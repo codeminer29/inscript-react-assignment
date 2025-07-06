@@ -15,7 +15,7 @@ export default function Header() {
           </svg>
 
           {/* Breadcrumb */}
-          <nav className="breadcrumb flex items-center text-sm text-gray-600 gap-2">
+          <nav className="breadcrumb flex items-center text-sm text-gray-600 gap-4">
             <a href="#" className="cursor-pointer capitalize text-[#AFAFAF]">
               workspace
             </a>
