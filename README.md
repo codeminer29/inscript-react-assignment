@@ -1,69 +1,85 @@
-# React + TypeScript + Vite
+# 📊 Inscript React Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a front-end assignment for the **React Developer Internship** at **Inscript Private Limited**. The goal was to replicate a spreadsheet-style UI based on a provided Figma design using React, TypeScript, Tailwind CSS, and `@tanstack/react-table`.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- ⚛️ **React** + **TypeScript** (Vite)
+- 🎨 **Tailwind CSS**
+- 📊 **@tanstack/react-table**
+- ☁️ **Vercel** (for deployment)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🔧 Local Setup Instructions
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/codeminer29/inscript-react-assignment.git
+   cd inscript-react-assignment
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. Open `http://localhost:5173` in your browser to view the application.
+
+---
+
+## 🌐 Live Demo
+
+🔗 [View Deployed App](https://inscript-react-assignment.vercel.app)
+
+---
+
+## ✅ Features Implemented
+
+- 📐 Spreadsheet-style layout with grouped column headers
+- 📱 Fully responsive grid using Tailwind CSS
+- 🔄 Dynamic row rendering from mock data
+- 🏷️ Column headers with icons
+- 📊 Conditional formatting for status and priority
+- ✏️ Editable cell support (in progress)
+
+---
+
+## ⚖️ Trade-offs & Decisions
+
+- **Tailwind CSS** was chosen for rapid styling and pixel-perfect UI alignment per the Figma.
+- **@tanstack/react-table** was selected for its flexibility in handling complex table structures, but required custom styling to achieve a spreadsheet-like feel.
+- **Scrollbars were hidden** to improve visual clarity. However, they can be re-enabled for better accessibility if needed.
+- **Functionality like sorting and filtering** was intentionally excluded to focus purely on design fidelity and layout accuracy.
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   └── Spreadsheet.tsx      # Main spreadsheet component
+├── data/
+│   └── mockData.ts          # Mock data for rows
+├── App.tsx                  # Entry component
+├── main.tsx                 # Vite setup
+├── index.css                # Tailwind base styles
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 👨‍💻 Author
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Soham Bamane**  
+GitHub: [@codeminer29](https://github.com/codeminer29)  
+React Developer Intern Applicant at **Inscript Pvt. Ltd.**
+
+---
