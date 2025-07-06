@@ -20,11 +20,11 @@ export default function Header() {
               workspace
             </a>
             <span className="text-gray-400">{'>'}</span>
-            <a href="#" className="cursor-pointer capitalize text-[#AFAFAF]">
+            <a href="#" className="cursor-pointer capitalize text-[#AFAFAF] text-sm">
               folder 2
             </a>
             <span className="text-gray-400">{'>'}</span>
-            <a href="#" className="cursor-pointer capitalize text-[#121212] font-medium">
+            <a href="#" className="cursor-pointer capitalize text-[#121212] text-sm font-medium">
               Spreadsheet 3
             </a>
 
